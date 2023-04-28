@@ -5,8 +5,8 @@
 * Ruby version: `3.1.1`
 * Rails version: `7.0.4`
 
+Clone this repo (no need to fork)
 ```
-  - Clone this repo (no need to fork)
   - `cd <repo_name>`
   - `bundle install`
   - `rails db:{create,migrate,seed}`
@@ -72,3 +72,7 @@ For additional guidance, consider the following rules:
 
 * No query logic in your Controllers or Views; this should live in your Models.
 * No data formatting in your Models or Controllers; this should live in your Views.
+
+
+## Review
+Completed code for this lesson can be found in the `refactor` branch [here](https://github.com/turingschool-examples/mvc-in-action-7/tree/refactor)
