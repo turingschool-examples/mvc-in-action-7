@@ -1,4 +1,9 @@
-<h1><%= @comedian.name %></h1>
-<% if @comedian.specials.count > 2 && @longest_special > 20 %>
-  <p>Average runtime of all this comedian's specials: <%= @average_special_runtime %></p>
+<center><h1><%= @comedian.name %></h1></center>
+<br>
+<br>
+<h3>Average runtime of this comedian's specials:</h3>
+<% if @comedian.count_of_specials > 2 && @comedian.longest_special > 20 %>
+    <li><%= @comedian.average_special_runtime %> minutes</li>
+<% else %>
+  <p>We don't have any data...</p>
 <% end %>
