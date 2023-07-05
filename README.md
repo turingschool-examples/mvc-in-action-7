@@ -2,8 +2,8 @@
 ------
 
 ## Setup instructions:
-* Ruby version: `3.1.1`
-* Rails version: `7.0.4`
+* Ruby version: `3.2.2`
+* Rails version: `7.0.5`
 
 - Clone this repo (no need to fork)
 - `cd <repo_name>`
