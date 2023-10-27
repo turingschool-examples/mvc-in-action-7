@@ -5,7 +5,7 @@ class Comedian < ApplicationRecord
   validates_presence_of :age
 
   def self.average_age
-    average(:age)
+    average(:age).round(2)
     # "#{average(:age).round(2)} Years"
   end
 
@@ -21,5 +21,9 @@ class Comedian < ApplicationRecord
     specials.maximum(:runtime)
     # longest_array = specials.order(runtime: :desc).limit(1)
     # longest_array[0].runtime
+  end
+
+  def can_average?
+    count_of_specials > 2 && longest_special > 20
   end
 end

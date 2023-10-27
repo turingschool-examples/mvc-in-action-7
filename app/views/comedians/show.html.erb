@@ -2,7 +2,7 @@
 <br>
 <br>
 <h3>Average runtime of this comedian's specials:</h3>
-<% if @comedian.count_of_specials > 2 && @comedian.longest_special > 20 %>
+<% if @comedian.can_average? %>
     <li><%= @comedian.average_special_runtime %> minutes</li>
 <% else %>
   <p>We don't have any data...</p>
