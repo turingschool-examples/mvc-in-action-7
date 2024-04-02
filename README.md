@@ -35,7 +35,7 @@ end
 ### Views
 ```erb
 <% @comedians.each do |comic| %>
-<h4><%= comic.specials.count %> Specials</h4>
+<h4><%= comic.name %>: <%= comic.specials.count %> Specials</h4>
 <% end %>
 ```
 
